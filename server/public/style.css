@@ -1,6 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+ul, body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    max-width: 1000px;
+    margin:15px auto;
+    padding:15px;
+    box-shadow: 0 0 2px 3px #0000004f ;
+
+}
+.header_menu {
+    display: flex;
+}
+.header__link {
+    padding:10px 25px ;
+}
+.page {
+    box-shadow: 0 0 2px 3px #0000004f ;
+    margin: 0 auto;
+    max-width:1000px ;
+    padding: 15px;
+    min-height: 400px;
+}
+.footer {
+    box-shadow: 0 0 2px 3px #0000004f ;
+    margin: 15px auto;
+    max-width:1000px ;
+    padding: 15px;
+    text-align: center;
+  
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
 .auth {
     max-width:350px;
-    margin: 200px auto 0 auto;
+    margin: 50px auto 0 auto;
 
 }
 .auth__row {
@@ -37,5 +78,5 @@
     color: red;
     font-size: 14px;
     margin-top: 10px;
-    
 }
+
