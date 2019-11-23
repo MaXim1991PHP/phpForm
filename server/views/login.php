@@ -5,15 +5,22 @@
                 <div class="auth__row">
                     <label for="username">User name</label>
                     <input class="auth__text" type="text" id="username">
-                    <i class="auth__error">Don`t contain _,-,{},$,0-9 length > 2 chars,</i>
+                    <i class="auth__error auth__error_hide">Don`t contain (_,-,{},$,0-9 length > 2 chars)</i>
                 </div>
                 <div class="auth__row">
                         <label for="usermail">User email</label>
                         <input class="auth__text" type="text" id="usermail">
+                        <i class="auth__error auth__error_hide">Not valid email(example@gmail.com)</i>
+                    </div>
+                    <div class="auth__row">
+                        <label for="userphone">User phone</label>
+                        <input class="auth__text" type="text" id="userphone">
+                        <i class="auth__error auth__error_hide">Not valid phone(example:+38073456789)</i>
                     </div>
                     <div class="auth__row">
                             <label for="userpass">User password</label>
                             <input class="auth__text" type="password" id="userpass">
+                            <i class="auth__error auth__error_hide">Must contain (a-z,A-Z, 0-9 length > 7 chars)</i>
                         </div>
                                 <label class="auth__check">
                                Subscribe 
