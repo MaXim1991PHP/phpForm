@@ -1,10 +1,10 @@
-<h1>Home</h1>
+<h1>Contacts</h1>
 <p>
-Lorem ipsum dolor sit amet 
+    Lorem ipsum dolor sit amet consectetur,     
 </p>
 <p>
-consectetur adipisicing elit. Facilis harum 
+    Lorem ipsum dolor sit amet consectetur,     
 </p>
 <p>
-quisquam reiciendis recusandae quidem sunt.
+    Lorem ipsum dolor sit amet consectetur,     
 </p>
