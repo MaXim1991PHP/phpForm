@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-
-
-include'./hendlers/mysqli.php';
+include './hendlers/dump.php';
+include './hendlers/mysqli.php';
 include './hendlers/validate.php';
 
 $route = $_SERVER['REQUEST_URI'];

@@ -32,5 +32,34 @@ if ($method === 'POST') {
             ];
             echo json_encode($responce);
         }
-    }
+    };
+     if ($route === '/login') { 
+         $email = $_POST['email'];
+          $password = $_POST['passvord'];
+         
+         $User = getUser($email);
+         /*if not exists user in database or password is not correct
+          send page login with error
+          */
+         if(empty($User)|| empty($User[0])||$password !== $User[0]['passvord']){
+             $error = 'User not found, enter correct email';
+             include './views/header.php';
+             include './views/login.php';
+             include './views/footer.php';
+             die;
+          
+         }
+             $_SESSION['user'] = $User[0];
+             
+             $isAdmin = $User[0]['email']==='admai@gmail.com';
+             
+             if($isAdmin) {
+             header("Location: /users");
+             } else {
+                 header("Location: /");
+             }
+       D($User);
+         
+    
+     }
 }

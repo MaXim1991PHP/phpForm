@@ -7,7 +7,7 @@ function getUser($email) {
     }
     
     $dataUser = $DB->query("SELECT id, username, email, phone from users WHERE email='{$email}'");
-    $user = $dataUser->fetch(MYSQLI_ASSOC);
+    $user = $dataUser->fetch_all(MYSQLI_ASSOC);
     // var_dump($user);
     mysqli_close($DB);
     
@@ -22,7 +22,7 @@ function getUsers() {
     if (!$DB) {
         die("Ошибка: Невозможно установить соединение");
     }
-    $dataUsers = $DB->query('SELECT id, username, email, phone from users');
+    $dataUsers = $DB->query('SELECT id, username, email, phone,passvord from users');
     $users = $dataUsers->fetch_all(MYSQLI_ASSOC);
     // var_dump($users);
     mysqli_close($DB);
